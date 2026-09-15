@@ -39,7 +39,7 @@ const projects = {
   }
 };
 const categoryFilters = document.querySelectorAll('[data-category]');
-const designCards = document.querySelectorAll('[data-project]');
+const designCards = document.querySelectorAll('[data-project], [data-design-categories]');
 const designGrid = document.querySelector('.project-grid');
 const designEmpty = document.querySelector('.design-empty');
 const designStatus = document.querySelector('#design-status');

@@ -73,6 +73,11 @@ h1 { font: 700 clamp(2.8rem, 5.25vw, 4.25rem)/1.1 'Manrope', sans-serif; letter-
 .project-card { padding: 0; text-align: left; background: var(--surface); border: 1px solid var(--border); border-radius: 8px; overflow: hidden; transition: transform .2s, border-color .2s, box-shadow .2s; }
 .project-card:hover { transform: translateY(-4px); border-color: var(--accent); box-shadow: 0 12px 30px #18251c0a; }
 .project-content { padding: 24px 26px 26px; }
+.infographic-card { display: flex; flex-direction: column; }
+.infographic-preview { height: 340px; padding: 16px; display: grid; place-items: center; background: var(--subtle); }
+.infographic-preview img { display: block; width: 100%; height: 100%; min-height: 0; object-fit: contain; }
+.infographic-card .project-content { flex: 1; }
+.infographic-card .project-title h3 { font-size: 1.125rem; }
 .project-title { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 10px; }
 .project-title h3 { font: 600 1.25rem/1.4 'Manrope', sans-serif; letter-spacing: -.035em; }
 .project-arrow { font-size: 1.25rem; color: var(--accent); }
