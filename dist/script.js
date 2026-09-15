@@ -29,13 +29,13 @@ const projects = {
     title: 'Personal portfolio',
     description: 'The site you’re exploring: a minimal, responsive portfolio with a calm visual style, light and dark themes, keyboard-accessible navigation, and space for selected work.',
     tags: ['HTML', 'CSS', 'JavaScript'],
-    note: 'Built to be personal. The name, introduction, projects, and contact section can all be customized in index.html.'
+    note: 'Focus: clear visual hierarchy, responsive layouts, and accessible interactions.'
   },
   notes: {
     title: 'Everyday notes',
     description: 'A sample product direction for a quieter note-taking experience. A warm paper palette, simple checklists, and thoughtful typography keep the focus on your thoughts.',
     tags: ['Sample concept', 'UI design'],
-    note: 'This is an illustrative concept, not a released app. Replace it with your own project when you’re ready.'
+    note: 'An illustrative UI concept exploring a note-taking experience; not a released application.'
   }
 };
 const dialog = document.querySelector('#project-dialog');
