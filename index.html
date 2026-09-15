@@ -55,6 +55,19 @@
         <section class="section" id="design" aria-labelledby="design-heading">
           <div class="section-heading"><h2 id="design-heading"><span class="section-number">01</span> Design</h2><span class="section-aside">Ideas brought to life</span></div>
           <p class="sample-note">Portfolio and concept work exploring layout, usability, and visual design.</p>
+          <div class="design-filters" role="group" aria-label="Filter designs by category">
+            <button type="button" class="design-filter" data-category="all" aria-pressed="true" aria-controls="design-results">All designs</button>
+            <button type="button" class="design-filter" data-category="infographics" aria-pressed="false" aria-controls="design-results">Infographics</button>
+            <button type="button" class="design-filter" data-category="logos" aria-pressed="false" aria-controls="design-results">Logo Designs</button>
+            <button type="button" class="design-filter" data-category="tshirts" aria-pressed="false" aria-controls="design-results">T-shirt Design</button>
+            <button type="button" class="design-filter" data-category="figma" aria-pressed="false" aria-controls="design-results">Figma Designs</button>
+          </div>
+          <p class="design-status" id="design-status" role="status" aria-live="polite" aria-atomic="true">Showing all designs · 2 items</p>
+          <div id="design-results">
+          <div class="design-empty" hidden>
+            <h3 id="design-empty-heading"></h3>
+            <p>No designs have been added to this category yet.</p>
+          </div>
           <div class="project-grid">
             <button class="project-card" type="button" data-project="folio">
               <div class="project-art art-folio" aria-hidden="true"><div class="mini-browser"><div class="browser-bar"><i></i><i></i><i></i></div><div class="mini-content"><span class="mini-kicker">DESIGNER & DEVELOPER</span><strong>Less, but<br>better<span>.</span></strong><div class="mini-line"></div><div class="mini-line short"></div><div class="mini-pill">Explore my work ↗</div></div><span class="mini-star">✳</span></div><span class="art-index">001 / WEB</span></div>
@@ -64,6 +77,7 @@
               <div class="project-art art-notes" aria-hidden="true"><div class="note-sheet"><span class="note-date">A PLACE FOR YOUR THOUGHTS</span><strong>Small notes.<br>Big ideas.</strong><div class="note-rule"></div><div class="note-line"><span>✓</span> Make something meaningful</div><div class="note-line"><span>✓</span> Stay a little curious</div><div class="note-line muted"><span>○</span> See where it takes you</div></div><span class="art-index">002 / CONCEPT</span></div>
               <div class="project-content"><div class="project-title"><h3>Everyday notes</h3><span class="project-arrow" aria-hidden="true">↗</span></div><p>A simple concept for collecting thoughts and making room for ideas.</p><div class="tags"><span>Product concept</span><span>UI design</span></div></div>
             </button>
+          </div>
           </div>
         </section>
 

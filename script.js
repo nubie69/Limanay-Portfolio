@@ -38,6 +38,31 @@ const projects = {
     note: 'An illustrative UI concept exploring a note-taking experience; not a released application.'
   }
 };
+const categoryFilters = document.querySelectorAll('[data-category]');
+const designCards = document.querySelectorAll('[data-project]');
+const designGrid = document.querySelector('.project-grid');
+const designEmpty = document.querySelector('.design-empty');
+const designStatus = document.querySelector('#design-status');
+
+categoryFilters.forEach(filter => {
+  filter.addEventListener('click', () => {
+    const category = filter.dataset.category;
+    const label = filter.textContent.trim();
+    categoryFilters.forEach(button => button.setAttribute('aria-pressed', String(button === filter)));
+    let count = 0;
+    designCards.forEach(card => {
+      // Categorize only work with a confirmed category; existing samples remain in All designs.
+      const categories = (card.dataset.designCategories || '').split(' ');
+      card.hidden = category !== 'all' && !categories.includes(category);
+      if (!card.hidden) count += 1;
+    });
+    designGrid.hidden = count === 0;
+    designEmpty.hidden = count !== 0;
+    document.querySelector('#design-empty-heading').textContent = label;
+    designStatus.textContent = `${label} · ${count} ${count === 1 ? 'item' : 'items'}`;
+  });
+});
+
 const dialog = document.querySelector('#project-dialog');
 document.querySelectorAll('[data-project]').forEach(card => {
   card.addEventListener('click', () => {
