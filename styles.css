@@ -34,8 +34,8 @@ nav > a { font-size: 14px; padding: 10px 0; }
 .avatar { width: 36px; height: 36px; font-size: 17px; border-radius: 10px; }
 .eyebrow { font-size: 12px; letter-spacing: 1.8px; }
 h1 { grid-column: 1; grid-row: 2 / 5; font-size: clamp(48px, 5.6vw, 76px); line-height: 1.08; letter-spacing: -3.5px; }
-.profile-card { grid-column: 2; grid-row: 2; width: min(100%, 360px); margin: 0 0 30px auto; border: 1px solid var(--border); border-radius: 14px; overflow: hidden; background: var(--surface); box-shadow: 0 24px 70px rgba(32, 39, 27, .08); }
-.profile-card img { display: block; width: 100%; aspect-ratio: 4 / 5; object-fit: cover; object-position: center top; }
+.profile-card { grid-column: 2; grid-row: 2; align-self: start; justify-self: center; width: min(100%, 340px); margin: 0 auto 30px; border: 1px solid var(--border); border-radius: 14px; overflow: hidden; background: var(--surface); box-shadow: 0 24px 70px rgba(32, 39, 27, .08); }
+.profile-card img { display: block; width: 100%; aspect-ratio: 4 / 5; object-fit: cover; object-position: center 42%; }
 .profile-card figcaption { display: flex; justify-content: space-between; gap: 20px; align-items: center; padding: 16px 18px; border-top: 1px solid var(--border); }
 .profile-card figcaption span { font-size: 12px; color: var(--muted); text-transform: uppercase; letter-spacing: 1.5px; }
 .profile-card figcaption strong { font-size: 14px; font-weight: 650; text-align: right; }
@@ -109,7 +109,7 @@ footer { font-size: 12px; padding: 28px 0 36px; gap: 20px; }
   .page-shell { width: calc(100% - 64px); }
   .hero { column-gap: 36px; padding: 64px 0; }
   h1 { font-size: 56px; letter-spacing: -2.8px; }
-  .profile-card { width: min(100%, 320px); }
+  .profile-card { width: min(100%, 310px); }
   .hero-lead { font-size: 21px; }
   .project-art { height: 250px; }
   .mini-browser { height: 210px; }
@@ -135,7 +135,7 @@ footer { font-size: 12px; padding: 28px 0 36px; gap: 20px; }
   .hero { display: block; padding: 48px 0; }
   .intro-meta { margin-bottom: 24px; }
   h1 { font-size: clamp(44px, 10.8vw, 64px); letter-spacing: -2.5px; }
-  .profile-card { width: min(100%, 340px); margin: 28px 0 0; }
+  .profile-card { width: min(100%, 340px); margin: 28px auto 0; }
   .hero-lead { margin-top: 24px; font-size: 22px; max-width: none; }
   .hero-description { margin-top: 14px; }
   .hero-note { margin-top: 24px; }
