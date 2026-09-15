@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Portfolio profile of Aliah Rez G. Limanay, a visual and web designer creating thoughtful visuals and intuitive web experiences." />
+    <meta name="color-scheme" content="light dark" />
+    <title>Aliah Rez G. Limanay — Portfolio Profile</title>
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+    <script>
+      try {
+        const saved = localStorage.getItem('portfolio-theme');
+        document.documentElement.dataset.theme = saved === 'light' || saved === 'dark' ? saved : matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      } catch { document.documentElement.dataset.theme = matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'; }
+    </script>
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="page-shell">
+      <header class="site-header">
+        <a class="wordmark" href="#" aria-label="Aliah Rez G. Limanay, home">al<span>.</span></a>
+        <nav aria-label="Main navigation">
+          <a href="#about">about</a>
+          <a href="#design">design</a>
+          <a href="#skills">skills</a>
+          <a href="#contact">contact</a>
+          <span class="nav-divider" aria-hidden="true"></span>
+          <button class="theme-toggle" type="button" aria-label="Switch to dark mode" title="Switch to dark mode">
+            <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M20.7 13A8.7 8.7 0 0 1 11 3.3 8.8 8.8 0 1 0 20.7 13Z"/></svg>
+            <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.4 1.4m11.2 11.2L19 19M5 19l1.4-1.4M17.6 6.4 19 5"/></svg>
+          </button>
+        </nav>
+      </header>
+
+      <main id="main">
+        <section class="hero" id="about" aria-labelledby="hero-heading">
+          <div class="hero-copy">
+          <div class="intro-meta"><span class="eyebrow">VISUAL & WEB DESIGNER</span></div>
+          <h1 id="hero-heading">Aliah Rez<br>G. Limanay<span class="accent">.</span></h1>
+          <p class="hero-lead">Thoughtful visuals.<br>Intuitive digital experiences.</p>
+          <p class="hero-description">I’m Aliah, a visual and web designer focused on clear communication, considered details, and experiences that feel natural to use.</p>
+          <div class="hero-actions"><a class="primary-link" href="#design">View design <span aria-hidden="true">↗</span></a><a class="quiet-link" href="#contact">Get in touch <span aria-hidden="true">↗</span></a></div>
+          </div>
+          <figure class="profile-card">
+            <img src="src/Portfolio.jpg" alt="Portrait of Aliah Rez G. Limanay" width="1125" height="1420" fetchpriority="high" />
+            <figcaption>
+              <strong>Aliah Rez G. Limanay</strong>
+              <span>Visual & web designer</span>
+            </figcaption>
+          </figure>
+        </section>
+
+        <section class="section" id="design" aria-labelledby="design-heading">
+          <div class="section-heading"><h2 id="design-heading"><span class="section-number">01</span> Design</h2><span class="section-aside">Ideas brought to life</span></div>
+          <p class="sample-note">Portfolio and concept work exploring layout, usability, and visual design.</p>
+          <div class="design-filters" role="group" aria-label="Filter designs by category">
+            <button type="button" class="design-filter" data-category="all" aria-pressed="true" aria-controls="design-results">All designs</button>
+            <button type="button" class="design-filter" data-category="infographics" aria-pressed="false" aria-controls="design-results">Infographics</button>
+            <button type="button" class="design-filter" data-category="logos" aria-pressed="false" aria-controls="design-results">Logo Designs</button>
+            <button type="button" class="design-filter" data-category="tshirts" aria-pressed="false" aria-controls="design-results">T-shirt Design</button>
+            <button type="button" class="design-filter" data-category="figma" aria-pressed="false" aria-controls="design-results">Figma Designs</button>
+          </div>
+          <p class="design-status" id="design-status" role="status" aria-live="polite" aria-atomic="true">Showing all designs · 2 items</p>
+          <div id="design-results">
+          <div class="design-empty" hidden>
+            <h3 id="design-empty-heading"></h3>
+            <p>No designs have been added to this category yet.</p>
+          </div>
+          <div class="project-grid">
+            <button class="project-card" type="button" data-project="folio">
+              <div class="project-art art-folio" aria-hidden="true"><div class="mini-browser"><div class="browser-bar"><i></i><i></i><i></i></div><div class="mini-content"><span class="mini-kicker">DESIGNER & DEVELOPER</span><strong>Less, but<br>better<span>.</span></strong><div class="mini-line"></div><div class="mini-line short"></div><div class="mini-pill">Explore my work ↗</div></div><span class="mini-star">✳</span></div><span class="art-index">001 / WEB</span></div>
+              <div class="project-content"><div class="project-title"><h3>Personal portfolio</h3><span class="project-arrow" aria-hidden="true">↗</span></div><p>A quiet space on the web to share your work and tell your story.</p><div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div></div>
+            </button>
+            <button class="project-card" type="button" data-project="notes">
+              <div class="project-art art-notes" aria-hidden="true"><div class="note-sheet"><span class="note-date">A PLACE FOR YOUR THOUGHTS</span><strong>Small notes.<br>Big ideas.</strong><div class="note-rule"></div><div class="note-line"><span>✓</span> Make something meaningful</div><div class="note-line"><span>✓</span> Stay a little curious</div><div class="note-line muted"><span>○</span> See where it takes you</div></div><span class="art-index">002 / CONCEPT</span></div>
+              <div class="project-content"><div class="project-title"><h3>Everyday notes</h3><span class="project-arrow" aria-hidden="true">↗</span></div><p>A simple concept for collecting thoughts and making room for ideas.</p><div class="tags"><span>Product concept</span><span>UI design</span></div></div>
+            </button>
+          </div>
+          </div>
+        </section>
+
+        <section class="section skills" id="skills" aria-labelledby="skills-heading">
+          <div class="section-heading"><h2 id="skills-heading"><span class="section-number">02</span> Skills</h2><span class="section-aside">Design with purpose</span></div>
+          <div class="skills-grid">
+            <div class="skill-group">
+              <h3>Visual design</h3>
+              <p>Bringing ideas to life through clear, considered visuals.</p>
+              <ul class="skill-list" aria-label="Visual design skills"><li>Layout & composition</li><li>Typography</li><li>Color & contrast</li><li>Visual hierarchy</li></ul>
+            </div>
+            <div class="skill-group">
+              <h3>Web design</h3>
+              <p>Shaping digital experiences that feel simple and intuitive.</p>
+              <ul class="skill-list" aria-label="Web design skills"><li>Interface design</li><li>Responsive layouts</li><li>Wireframing</li><li>Interaction design</li></ul>
+            </div>
+          </div>
+        </section>
+
+        <section class="section toolkit" aria-labelledby="toolkit-heading">
+          <div class="section-heading"><h2 id="toolkit-heading"><span class="section-number">03</span> The approach</h2><span class="section-aside">Keep it intentional</span></div>
+          <div class="approach-row"><span class="approach-symbol" aria-hidden="true">⌘</span><div><h3>Start with curiosity</h3><p>Ask questions, explore possibilities, and learn by making.</p></div></div>
+          <div class="approach-row"><span class="approach-symbol" aria-hidden="true">◈</span><div><h3>Care about the details</h3><p>Clear interfaces. Considered interactions. The little things matter.</p></div></div>
+          <div class="approach-row"><span class="approach-symbol" aria-hidden="true">↗</span><div><h3>Make it a little better</h3><p>Start small, listen to feedback, and keep moving forward.</p></div></div>
+        </section>
+
+        <section class="section contact" id="contact" aria-labelledby="contact-heading">
+          <div class="section-heading"><h2 id="contact-heading"><span class="section-number">04</span> Contact</h2></div>
+          <div class="contact-panel"><span class="eyebrow">LET’S CONNECT</span><h3>Have a project in mind<span class="accent">?</span></h3><p>Get in touch to discuss your ideas or learn more about my work.</p><a class="email-link" href="mailto:aliahlimanay03@gmail.com">aliahlimanay03@gmail.com <span aria-hidden="true">↗</span></a></div>
+        </section>
+      </main>
+
+      <footer><p>© <span id="year">2026</span> Aliah Rez G. Limanay</p><span>Made with intention<span class="footer-star" aria-hidden="true"> ✳</span></span><a href="#" aria-label="Back to top">Back to top ↑</a></footer>
+    </div>
+    <dialog id="project-dialog" aria-labelledby="dialog-title"><div class="dialog-inner"><button class="dialog-close" type="button" aria-label="Close design details">×</button><span class="eyebrow">DESIGN NOTES</span><h2 id="dialog-title"></h2><p id="dialog-description"></p><div class="tags" id="dialog-tags"></div><p class="dialog-note" id="dialog-note"></p><button class="primary-link dialog-done" type="button">Back to portfolio <span aria-hidden="true">↗</span></button></div></dialog>
+  </body>
+</html>
