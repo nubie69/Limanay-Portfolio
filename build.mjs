@@ -41,9 +41,9 @@ if ((css.match(/\{/g) || []).length !== (css.match(/\}/g) || []).length) throw n
 console.log(`Validated ${assets.size} website files, internal anchors, filename case, and JavaScript syntax.`);
 
 if (!process.argv.includes('--check')) {
-  const output = path.resolve(root, 'dist');
+  const output = path.resolve(root, 'public');
   // Verify the cleanup target is the project's own output directory.
-  if (path.dirname(output) !== root || path.basename(output) !== 'dist') throw new Error('Unsafe output directory.');
+  if (path.dirname(output) !== root || path.basename(output) !== 'public') throw new Error('Unsafe output directory.');
   if (fs.existsSync(output)) {
     if (fs.lstatSync(output).isSymbolicLink() || fs.realpathSync(output) !== output) throw new Error('Output directory must not be a link.');
     fs.rmSync(output, { recursive: true });
@@ -54,5 +54,5 @@ if (!process.argv.includes('--check')) {
     fs.copyFileSync(path.join(root, asset), destination);
   }
   fs.writeFileSync(path.join(output, '.nojekyll'), '');
-  console.log('Deployment files are ready in dist/.');
+  console.log('Deployment files are ready in public/.');
 }
