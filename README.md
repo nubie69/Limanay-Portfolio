@@ -1,24 +1,48 @@
-# Aliah Rez G. Limanay — Portfolio
+﻿# Aliah Rez G. Limanay - Portfolio
 
-A minimal, responsive portfolio inspired by the restrained layout and typography of [Bryl Lim’s portfolio](https://www.bryllim.com/), with original styling and sample content.
+A static portfolio for visual design, web projects, skills, work experience, and certificates. Built with HTML, CSS, and JavaScript, with a blush and charcoal palette, light/dark themes, and accessible dialogs and pagination.
 
-## Preview
+## Build for deployment
 
-Open `index.html` in your browser, or run a local server:
+Requires Node.js 18 or newer. No package installation, backend, environment variables, or secrets are needed.
 
 ```sh
-python -m http.server 3000
+npm run check
+npm run build
 ```
 
-Then visit http://localhost:3000.
+The build validates local assets, exact filename case for Linux hosting, internal anchors, duplicate IDs, and JavaScript syntax. It recreates `dist/` with only the files referenced by the website, plus `.nojekyll`. Edit the source files, then rebuild; generated files in `dist/` are overwritten.
 
-## Personalize
+## Preview the deployment
 
-- Edit the name, introduction, and contact details in `index.html`. The site is personalized for Aliah Rez G. Limanay, a visual and web designer.
-- Replace the clearly labeled sample project cards in `index.html` and their details in `script.js`.
-- Change the light and dark color variables at the top of `styles.css`.
-- Update the initials in `favicon.svg` and the header.
+With Python installed:
 
-The theme follows the device preference until manually changed, then saves the choice locally. Project cards open accessible native dialogs; Escape closes them. Reduced-motion preferences are respected. Google Fonts is optional: the layout uses system fallback fonts when offline.
+```sh
+python -m http.server 3000 --bind 127.0.0.1 --directory dist
+```
 
-No build step or dependencies required. Deploy the four website files to any static host.
+Open http://127.0.0.1:3000. Review desktop and mobile layouts, light and dark mode, design filters, project and certificate navigation, dialogs, and the contact link.
+
+## Deploy
+
+Upload the **contents of `dist/`** to a static host. `index.html` must be at the site's web root. For a host connected to this repository, set the build command to `npm run build` and the publish/output directory to `dist`. There is no application server or start command.
+
+All website asset URLs are relative, so the site also supports hosting under a subdirectory. No SPA rewrite is required. Google Fonts loads externally; system font fallbacks work if the font request is unavailable.
+
+The included `portfolio-deploy.zip` contains the deployment files at the archive root. Extract it before uploading if your host expects a folder. Recreate the ZIP after changing the source:
+
+```powershell
+npm run build
+Compress-Archive -Path .\dist\* -DestinationPath .\portfolio-deploy.zip -Force
+```
+
+The build and ZIP are local preparation only; these commands do not publish the site. A live URL is needed before adding a canonical URL, sitemap, or absolute social preview image URL.
+
+## Edit content
+
+- `index.html`: portfolio text, skill lists, project details, certificates, and contact email.
+- `styles.css`: palette variables, responsive layouts, and visual styling.
+- `script.js`: themes, pagination, image viewers, and scroll animations.
+- `src/`: portfolio images and certificate PDFs.
+
+The theme follows the device preference until manually selected and saves the choice locally. Animations respect reduced-motion preferences. Image and PDF links remain available when JavaScript is disabled.

@@ -1,0 +1,13 @@
+{
+  "name": "aliah-limanay-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Aliah Rez G. Limanay's static design portfolio",
+  "scripts": {
+    "check": "node build.mjs --check",
+    "build": "node build.mjs"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

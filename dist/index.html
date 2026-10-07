@@ -5,6 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="Portfolio profile of Aliah Rez G. Limanay, a visual and web designer creating thoughtful visuals and intuitive web experiences." />
     <meta name="color-scheme" content="light dark" />
+    <meta name="theme-color" content="#FFF5F5" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#292526" media="(prefers-color-scheme: dark)" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Aliah Rez G. Limanay — Portfolio" />
+    <meta property="og:description" content="Visual and web design, selected projects, skills, and certificates by Aliah Rez G. Limanay." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <title>Aliah Rez G. Limanay — Portfolio Profile</title>
     <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
     <script>
@@ -23,8 +30,11 @@
         <a class="wordmark" href="#" aria-label="Aliah Rez G. Limanay, home">al<span>.</span></a>
         <nav aria-label="Main navigation">
           <a href="#about">about</a>
+          <a href="#experience">experience</a>
           <a href="#design">design</a>
+          <a href="#projects">projects</a>
           <a href="#skills">skills</a>
+          <a href="#certificates">certificates</a>
           <a href="#contact">contact</a>
           <span class="nav-divider" aria-hidden="true"></span>
           <button class="theme-toggle" type="button" aria-label="Switch to dark mode" title="Switch to dark mode">
@@ -38,10 +48,11 @@
         <section class="hero" id="about" aria-labelledby="hero-heading">
           <div class="hero-copy">
           <div class="intro-meta"><span class="eyebrow">VISUAL & WEB DESIGNER</span></div>
-          <h1 id="hero-heading">Aliah Rez<br>G. Limanay<span class="accent">.</span></h1>
+          <h1 id="hero-heading">Aliah Rez<br>G. Limanay<span class="accent"></span></h1>
           <p class="hero-lead">Thoughtful visuals.<br>Intuitive digital experiences.</p>
           <p class="hero-description">I’m Aliah, a visual and web designer focused on clear communication, considered details, and experiences that feel natural to use.</p>
           <div class="hero-actions"><a class="primary-link" href="#design">View design <span aria-hidden="true">↗</span></a><a class="quiet-link" href="#contact">Get in touch <span aria-hidden="true">↗</span></a></div>
+          <div class="hero-specialties" aria-label="Design specialties"><span>UI/UX Design</span><span>Graphic Design</span><span>Web Design</span></div>
           </div>
           <figure class="profile-card">
             <img src="src/Portfolio.jpg" alt="Portrait of Aliah Rez G. Limanay" width="1125" height="1420" fetchpriority="high" />
@@ -52,15 +63,37 @@
           </figure>
         </section>
 
+        <section class="section experience" id="experience" aria-labelledby="experience-heading">
+          <div class="section-heading"><h2 id="experience-heading"><span class="section-number">01</span> Work Experience</h2><span class="section-aside">Design in practice</span></div>
+          <article class="experience-card" aria-labelledby="va-role-heading">
+            <div class="experience-header">
+              <div>
+                <p class="eyebrow">U.S.-BASED ETSY CLIENT</p>
+                <h3 id="va-role-heading">Part-Time VA — T-Shirt Graphic Designer</h3>
+              </div>
+              <p class="experience-date"><time datetime="2025">2025</time> – Present</p>
+            </div>
+            <div class="experience-copy">
+              <p>I work as a part-time Virtual Assistant and Graphic Designer for a U.S.-based client with an Etsy shop, creating designs for a variety of products, including kids’ T-shirts, adult shirts, crewnecks, and tumblers. I create and refine graphics based on client requirements, project briefs, and current market trends.</p>
+              <p>For my design workflow, I primarily use Adobe Illustrator and Kittl, including Kittl’s built-in AI design tools when required for specific projects. I use Upwork to receive and manage design tasks, Dropbox to organize and deliver final PNG files, and Printify to upload designs for print-on-demand products.</p>
+              <p>I also conduct Etsy and EverBee research to identify trending designs, popular products, and market opportunities. These trends serve as references for developing similar but original designs that align with current customer interests.</p>
+              <p>Through this role, I have gained hands-on experience in apparel and product graphic design, digital illustration, typography, print-on-demand, Etsy product research, trend analysis, task management, file organization, and remote client collaboration.</p>
+            </div>
+            <div class="experience-examples">
+              <p><strong>Below are a few examples of my T-shirt, crewneck, tumbler, and apparel graphic designs:</strong></p>
+              <a class="primary-link" href="#design" data-view-apparel>View apparel designs <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+        </section>
+
         <section class="section" id="design" aria-labelledby="design-heading">
-          <div class="section-heading"><h2 id="design-heading"><span class="section-number">01</span> Design</h2><span class="section-aside">Ideas brought to life</span></div>
+          <div class="section-heading"><h2 id="design-heading"><span class="section-number">02</span> Design</h2><span class="section-aside">Ideas brought to life</span></div>
           <p class="sample-note">Portfolio and concept work exploring layout, usability, and visual design.</p>
           <div class="design-filters" role="group" aria-label="Filter designs by category">
             <button type="button" class="design-filter" data-category="all" aria-pressed="true" aria-controls="design-results">All designs</button>
             <button type="button" class="design-filter" data-category="infographics" aria-pressed="false" aria-controls="design-results">Infographics</button>
             <button type="button" class="design-filter" data-category="logos" aria-pressed="false" aria-controls="design-results">Logo Designs</button>
-            <button type="button" class="design-filter" data-category="tshirts" aria-pressed="false" aria-controls="design-results">T-shirt Design</button>
-            <button type="button" class="design-filter" data-category="figma" aria-pressed="false" aria-controls="design-results">Figma Designs</button>
+            <button type="button" class="design-filter" data-category="apparel" aria-pressed="false" aria-controls="design-results">Apparel Design</button>
           </div>
           <p class="design-status" id="design-status" role="status" aria-live="polite" aria-atomic="true">Showing all designs · 13 items</p>
           <div id="design-results">
@@ -69,93 +102,639 @@
             <p>No designs have been added to this category yet.</p>
           </div>
           <div class="project-grid">
-            <a class="project-card infographic-card" href="./src/Inforgraphics%20(1).jpg" target="_blank" rel="noopener" data-design-categories="infographics" aria-label="View The Ultimate Frisbee full size (opens in a new tab)">
+            <a class="project-card infographic-card" href="./src/Inforgraphics%20(1).jpg" target="_blank" rel="noopener" data-design-categories="infographics" aria-label="View The Ultimate Frisbee design details">
               <div class="infographic-preview"><img src="./src/Inforgraphics%20(1).jpg" alt="The Ultimate Frisbee infographic" width="800" height="2000" loading="lazy" decoding="async" /></div>
-              <div class="project-content"><div class="project-title"><h3>The Ultimate Frisbee</h3><span class="project-arrow" aria-hidden="true">↗</span></div><div class="tags"><span>Infographics</span><span>View full size</span></div></div>
+              <div class="project-content"><div class="project-title"><h3>The Ultimate Frisbee</h3><span class="project-arrow" aria-hidden="true">↗</span></div>
+                <!-- Edit this paragraph or add more paragraphs for this design. -->
+                <p class="design-description">An infographic about the sport of ultimate frisbee.</p>
+                <div class="tags"><span>Infographics</span><span>View design</span></div></div>
             </a>
-            <a class="project-card infographic-card" href="./src/Inforgraphics%20(2).jpg" target="_blank" rel="noopener" data-design-categories="infographics" aria-label="View Information Technology — COT Achievements full size (opens in a new tab)">
+            <a class="project-card infographic-card" href="./src/Inforgraphics%20(2).jpg" target="_blank" rel="noopener" data-design-categories="infographics" aria-label="View Information Technology — COT Achievements design details">
               <div class="infographic-preview"><img src="./src/Inforgraphics%20(2).jpg" alt="Information Technology — COT Achievements infographic" width="2000" height="1546" loading="lazy" decoding="async" /></div>
-              <div class="project-content"><div class="project-title"><h3>Information Technology — COT Achievements</h3><span class="project-arrow" aria-hidden="true">↗</span></div><div class="tags"><span>Infographics</span><span>View full size</span></div></div>
+              <div class="project-content"><div class="project-title"><h3>Information Technology — COT Achievements</h3><span class="project-arrow" aria-hidden="true">↗</span></div>
+                <!-- Edit this paragraph or add more paragraphs for this design. -->
+                <p class="design-description">An infographic highlighting Information Technology achievements at COT.</p>
+                <div class="tags"><span>Infographics</span><span>View design</span></div></div>
             </a>
-            <a class="project-card infographic-card" href="./src/Inforgraphics%20(3).jpg" target="_blank" rel="noopener" data-design-categories="infographics" aria-label="View Flash Flood Awareness full size (opens in a new tab)">
+            <a class="project-card infographic-card" href="./src/Inforgraphics%20(3).jpg" target="_blank" rel="noopener" data-design-categories="infographics" aria-label="View Flash Flood Awareness design details">
               <div class="infographic-preview"><img src="./src/Inforgraphics%20(3).jpg" alt="Flash Flood Awareness infographic" width="800" height="2000" loading="lazy" decoding="async" /></div>
-              <div class="project-content"><div class="project-title"><h3>Flash Flood Awareness</h3><span class="project-arrow" aria-hidden="true">↗</span></div><div class="tags"><span>Infographics</span><span>View full size</span></div></div>
+              <div class="project-content"><div class="project-title"><h3>Flash Flood Awareness</h3><span class="project-arrow" aria-hidden="true">↗</span></div>
+                <!-- Edit this paragraph or add more paragraphs for this design. -->
+                <p class="design-description">An awareness infographic about flash floods.</p>
+                <div class="tags"><span>Infographics</span><span>View design</span></div></div>
             </a>
-            <a class="project-card infographic-card" href="./src/Inforgraphics%20(4).jpg" target="_blank" rel="noopener" data-design-categories="infographics" aria-label="View Genetic Disorder full size (opens in a new tab)">
+            <a class="project-card infographic-card" href="./src/Inforgraphics%20(4).jpg" target="_blank" rel="noopener" data-design-categories="infographics" aria-label="View Genetic Disorder design details">
               <div class="infographic-preview"><img src="./src/Inforgraphics%20(4).jpg" alt="Genetic Disorder infographic" width="2000" height="1545" loading="lazy" decoding="async" /></div>
-              <div class="project-content"><div class="project-title"><h3>Genetic Disorder</h3><span class="project-arrow" aria-hidden="true">↗</span></div><div class="tags"><span>Infographics</span><span>View full size</span></div></div>
+              <div class="project-content"><div class="project-title"><h3>Genetic Disorder</h3><span class="project-arrow" aria-hidden="true">↗</span></div>
+                <!-- Edit this paragraph or add more paragraphs for this design. -->
+                <p class="design-description">An educational infographic about genetic disorders.</p>
+                <div class="tags"><span>Infographics</span><span>View design</span></div></div>
             </a>
-            <a class="project-card infographic-card" href="./src/Inforgraphics%20(5).jpg" target="_blank" rel="noopener" data-design-categories="infographics" aria-label="View Frisbee: The Ultimate Flying Disc Sport full size (opens in a new tab)">
+            <a class="project-card infographic-card" href="./src/Inforgraphics%20(5).jpg" target="_blank" rel="noopener" data-design-categories="infographics" aria-label="View Frisbee: The Ultimate Flying Disc Sport design details">
               <div class="infographic-preview"><img src="./src/Inforgraphics%20(5).jpg" alt="Frisbee: The Ultimate Flying Disc Sport infographic" width="800" height="2000" loading="lazy" decoding="async" /></div>
-              <div class="project-content"><div class="project-title"><h3>Frisbee: The Ultimate Flying Disc Sport</h3><span class="project-arrow" aria-hidden="true">↗</span></div><div class="tags"><span>Infographics</span><span>View full size</span></div></div>
+              <div class="project-content"><div class="project-title"><h3>Frisbee: The Ultimate Flying Disc Sport</h3><span class="project-arrow" aria-hidden="true">↗</span></div>
+                <!-- Edit this paragraph or add more paragraphs for this design. -->
+                <p class="design-description">An infographic introducing frisbee as a flying disc sport.</p>
+                <div class="tags"><span>Infographics</span><span>View design</span></div></div>
             </a>
-            <a class="project-card infographic-card" href="./src/Inforgraphics%20(6).jpg" target="_blank" rel="noopener" data-design-categories="infographics" aria-label="View Why Choose IT? full size (opens in a new tab)">
+            <a class="project-card infographic-card" href="./src/Inforgraphics%20(6).jpg" target="_blank" rel="noopener" data-design-categories="infographics" aria-label="View Why Choose IT? design details">
               <div class="infographic-preview"><img src="./src/Inforgraphics%20(6).jpg" alt="Why Choose IT? infographic" width="2000" height="1546" loading="lazy" decoding="async" /></div>
-              <div class="project-content"><div class="project-title"><h3>Why Choose IT?</h3><span class="project-arrow" aria-hidden="true">↗</span></div><div class="tags"><span>Infographics</span><span>View full size</span></div></div>
+              <div class="project-content"><div class="project-title"><h3>Why Choose IT?</h3><span class="project-arrow" aria-hidden="true">↗</span></div>
+                <!-- Edit this paragraph or add more paragraphs for this design. -->
+                <p class="design-description">An infographic exploring the choice to study Information Technology.</p>
+                <div class="tags"><span>Infographics</span><span>View design</span></div></div>
             </a>
-            <a class="project-card infographic-card" href="./src/Inforgraphics%20(7).jpg" target="_blank" rel="noopener" data-design-categories="infographics" aria-label="View Nature’s Spring full size (opens in a new tab)">
+            <a class="project-card infographic-card" href="./src/Inforgraphics%20(7).jpg" target="_blank" rel="noopener" data-design-categories="infographics" aria-label="View Nature’s Spring design details">
               <div class="infographic-preview"><img src="./src/Inforgraphics%20(7).jpg" alt="Nature’s Spring infographic" width="1587" height="2245" loading="lazy" decoding="async" /></div>
-              <div class="project-content"><div class="project-title"><h3>Nature’s Spring</h3><span class="project-arrow" aria-hidden="true">↗</span></div><div class="tags"><span>Infographics</span><span>View full size</span></div></div>
+              <div class="project-content"><div class="project-title"><h3>Nature’s Spring</h3><span class="project-arrow" aria-hidden="true">↗</span></div>
+                <!-- Edit this paragraph or add more paragraphs for this design. -->
+                <p class="design-description">An infographic design featuring Nature’s Spring.</p>
+                <div class="tags"><span>Infographics</span><span>View design</span></div></div>
             </a>
-            <a class="project-card infographic-card" href="./src/Inforgraphics%20(8).jpg" target="_blank" rel="noopener" data-design-categories="infographics" aria-label="View Yakult full size (opens in a new tab)">
+            <a class="project-card infographic-card" href="./src/Inforgraphics%20(8).jpg" target="_blank" rel="noopener" data-design-categories="infographics" aria-label="View Yakult design details">
               <div class="infographic-preview"><img src="./src/Inforgraphics%20(8).jpg" alt="Yakult infographic" width="1587" height="2245" loading="lazy" decoding="async" /></div>
-              <div class="project-content"><div class="project-title"><h3>Yakult</h3><span class="project-arrow" aria-hidden="true">↗</span></div><div class="tags"><span>Infographics</span><span>View full size</span></div></div>
+              <div class="project-content"><div class="project-title"><h3>Yakult</h3><span class="project-arrow" aria-hidden="true">↗</span></div>
+                <!-- Edit this paragraph or add more paragraphs for this design. -->
+                <p class="design-description">An infographic design featuring Yakult.</p>
+                <div class="tags"><span>Infographics</span><span>View design</span></div></div>
             </a>
-            <a class="project-card infographic-card" href="./src/Inforgraphics%20(1).png" target="_blank" rel="noopener" data-design-categories="infographics" aria-label="View Alagad — Campus Assistant full size (opens in a new tab)">
+            <a class="project-card infographic-card" href="./src/Inforgraphics%20(1).png" target="_blank" rel="noopener" data-design-categories="infographics" aria-label="View Alagad — Campus Assistant design details">
               <div class="infographic-preview"><img src="./src/Inforgraphics%20(1).png" alt="Alagad — Campus Assistant infographic" width="2000" height="1294" loading="lazy" decoding="async" /></div>
-              <div class="project-content"><div class="project-title"><h3>Alagad — Campus Assistant</h3><span class="project-arrow" aria-hidden="true">↗</span></div><div class="tags"><span>Infographics</span><span>View full size</span></div></div>
+              <div class="project-content"><div class="project-title"><h3>Alagad — Campus Assistant</h3><span class="project-arrow" aria-hidden="true">↗</span></div>
+                <!-- Edit this paragraph or add more paragraphs for this design. -->
+                <p class="design-description">An infographic introducing the Alagad campus assistant concept.</p>
+                <div class="tags"><span>Infographics</span><span>View design</span></div></div>
             </a>
-            <a class="project-card infographic-card" href="./src/Inforgraphics%20(2).png" target="_blank" rel="noopener" data-design-categories="infographics" aria-label="View Alagad — Features full size (opens in a new tab)">
+            <a class="project-card infographic-card" href="./src/Inforgraphics%20(2).png" target="_blank" rel="noopener" data-design-categories="infographics" aria-label="View Alagad — Features design details">
               <div class="infographic-preview"><img src="./src/Inforgraphics%20(2).png" alt="Alagad — Features infographic" width="2000" height="1294" loading="lazy" decoding="async" /></div>
-              <div class="project-content"><div class="project-title"><h3>Alagad — Features</h3><span class="project-arrow" aria-hidden="true">↗</span></div><div class="tags"><span>Infographics</span><span>View full size</span></div></div>
+              <div class="project-content"><div class="project-title"><h3>Alagad — Features</h3><span class="project-arrow" aria-hidden="true">↗</span></div>
+                <!-- Edit this paragraph or add more paragraphs for this design. -->
+                <p class="design-description">An infographic presenting features of the Alagad concept.</p>
+                <div class="tags"><span>Infographics</span><span>View design</span></div></div>
             </a>
-            <a class="project-card infographic-card" href="./src/Inforgraphics%20(3).png" target="_blank" rel="noopener" data-design-categories="infographics" aria-label="View ASEAN: 10 Nations, One Future full size (opens in a new tab)">
+            <a class="project-card infographic-card" href="./src/Inforgraphics%20(3).png" target="_blank" rel="noopener" data-design-categories="infographics" aria-label="View ASEAN: 10 Nations, One Future design details">
               <div class="infographic-preview"><img src="./src/Inforgraphics%20(3).png" alt="ASEAN: 10 Nations, One Future infographic" width="1414" height="2000" loading="lazy" decoding="async" /></div>
-              <div class="project-content"><div class="project-title"><h3>ASEAN: 10 Nations, One Future</h3><span class="project-arrow" aria-hidden="true">↗</span></div><div class="tags"><span>Infographics</span><span>View full size</span></div></div>
+              <div class="project-content"><div class="project-title"><h3>ASEAN: 10 Nations, One Future</h3><span class="project-arrow" aria-hidden="true">↗</span></div>
+                <!-- Edit this paragraph or add more paragraphs for this design. -->
+                <p class="design-description">An infographic about ASEAN and its ten member nations.</p>
+                <div class="tags"><span>Infographics</span><span>View design</span></div></div>
+            </a>
+            <a class="project-card infographic-card" href="./src/MJ_S.png" target="_blank" rel="noopener" data-design-categories="logos" aria-label="View MJ's logo design details">
+              <div class="infographic-preview"><img src="./src/MJ_S.png" alt="MJ's logo design" width="2000" height="667" loading="lazy" decoding="async" /></div>
+              <div class="project-content"><div class="project-title"><h3>MJ's Logo</h3><span class="project-arrow" aria-hidden="true">↗</span></div>
+                <!-- Edit this paragraph or add more paragraphs for this design. -->
+                <p class="design-description">A logo design for MJ's.</p>
+                <div class="tags"><span>Logo Designs</span><span>View design</span></div></div>
+            </a>
+            <a class="project-card infographic-card" href="./src/MJ_s-Leche-Flan-Logo.png" target="_blank" rel="noopener" data-design-categories="logos" aria-label="View MJ's Leche Flan logo design details">
+              <div class="infographic-preview"><img src="./src/MJ_s-Leche-Flan-Logo.png" alt="MJ's Leche Flan logo design" width="1772" height="1181" loading="lazy" decoding="async" /></div>
+              <div class="project-content"><div class="project-title"><h3>MJ's Leche Flan Logo</h3><span class="project-arrow" aria-hidden="true">↗</span></div>
+                <!-- Edit this paragraph or add more paragraphs for this design. -->
+                <p class="design-description">A logo design for MJ's Leche Flan.</p>
+                <div class="tags"><span>Logo Designs</span><span>View design</span></div></div>
+            </a>
+            <a class="project-card infographic-card" href="./src/MJ_s-Chilli-Garlic-Logo.png" target="_blank" rel="noopener" data-design-categories="logos" aria-label="View MJ's Chilli Garlic logo design details">
+              <div class="infographic-preview"><img src="./src/MJ_s-Chilli-Garlic-Logo.png" alt="MJ's Chilli Garlic logo design" width="2000" height="1000" loading="lazy" decoding="async" /></div>
+              <div class="project-content"><div class="project-title"><h3>MJ's Chilli Garlic Logo</h3><span class="project-arrow" aria-hidden="true">↗</span></div>
+                <!-- Edit this paragraph or add more paragraphs for this design. -->
+                <p class="design-description">A logo design for MJ's Chilli Garlic.</p>
+                <div class="tags"><span>Logo Designs</span><span>View design</span></div></div>
+            </a>
+            <a class="project-card infographic-card" href="./src/RM-LOGO.png" target="_blank" rel="noopener" data-design-categories="logos" aria-label="View RM logo design details">
+              <div class="infographic-preview"><img src="./src/RM-LOGO.png" alt="RM logo design" width="2000" height="2000" loading="lazy" decoding="async" /></div>
+              <div class="project-content"><div class="project-title"><h3>RM Logo</h3><span class="project-arrow" aria-hidden="true">↗</span></div>
+                <!-- Edit this paragraph or add more paragraphs for this design. -->
+                <p class="design-description">A logo design featuring the RM initials.</p>
+                <div class="tags"><span>Logo Designs</span><span>View design</span></div></div>
+            </a>
+            <a class="project-card infographic-card" href="./src/tshirt%20(1).jpg" target="_blank" rel="noopener" data-design-categories="apparel" aria-label="View Apparel mockup 1 design details">
+              <div class="infographic-preview"><img src="./src/tshirt%20(1).jpg" alt="Apparel mockup 1" width="1200" height="1200" loading="lazy" decoding="async" /></div>
+              <div class="project-content"><div class="project-title"><h3>Apparel Mockup 1</h3><span class="project-arrow" aria-hidden="true">↗</span></div>
+                <!-- Edit this paragraph or add more paragraphs for this design. -->
+                <p class="design-description">An apparel mockup presenting the design on a garment.</p>
+                <div class="tags"><span>Apparel Design</span><span>View design</span></div></div>
+            </a>
+            <a class="project-card infographic-card" href="./src/tshirt%20(2).jpg" target="_blank" rel="noopener" data-design-categories="apparel" aria-label="View Apparel mockup 2 design details">
+              <div class="infographic-preview"><img src="./src/tshirt%20(2).jpg" alt="Apparel mockup 2" width="1200" height="1200" loading="lazy" decoding="async" /></div>
+              <div class="project-content"><div class="project-title"><h3>Apparel Mockup 2</h3><span class="project-arrow" aria-hidden="true">↗</span></div>
+                <!-- Edit this paragraph or add more paragraphs for this design. -->
+                <p class="design-description">An apparel mockup presenting the design on a garment.</p>
+                <div class="tags"><span>Apparel Design</span><span>View design</span></div></div>
+            </a>
+            <a class="project-card infographic-card" href="./src/tshirt%20(3).jpg" target="_blank" rel="noopener" data-design-categories="apparel" aria-label="View Apparel mockup 3 design details">
+              <div class="infographic-preview"><img src="./src/tshirt%20(3).jpg" alt="Apparel mockup 3" width="1445" height="1083" loading="lazy" decoding="async" /></div>
+              <div class="project-content"><div class="project-title"><h3>Apparel Mockup 3</h3><span class="project-arrow" aria-hidden="true">↗</span></div>
+                <!-- Edit this paragraph or add more paragraphs for this design. -->
+                <p class="design-description">An apparel mockup presenting the design on a garment.</p>
+                <div class="tags"><span>Apparel Design</span><span>View design</span></div></div>
+            </a>
+            <a class="project-card infographic-card" href="./src/tshirt%20(4).jpg" target="_blank" rel="noopener" data-design-categories="apparel" aria-label="View Apparel mockup 4 design details">
+              <div class="infographic-preview"><img src="./src/tshirt%20(4).jpg" alt="Apparel mockup 4" width="1200" height="1200" loading="lazy" decoding="async" /></div>
+              <div class="project-content"><div class="project-title"><h3>Apparel Mockup 4</h3><span class="project-arrow" aria-hidden="true">↗</span></div>
+                <!-- Edit this paragraph or add more paragraphs for this design. -->
+                <p class="design-description">An apparel mockup presenting the design on a garment.</p>
+                <div class="tags"><span>Apparel Design</span><span>View design</span></div></div>
+            </a>
+            <a class="project-card infographic-card" href="./src/tshirt%20(5).jpg" target="_blank" rel="noopener" data-design-categories="apparel" aria-label="View Apparel mockup 5 design details">
+              <div class="infographic-preview"><img src="./src/tshirt%20(5).jpg" alt="Apparel mockup 5" width="1200" height="1200" loading="lazy" decoding="async" /></div>
+              <div class="project-content"><div class="project-title"><h3>Apparel Mockup 5</h3><span class="project-arrow" aria-hidden="true">↗</span></div>
+                <!-- Edit this paragraph or add more paragraphs for this design. -->
+                <p class="design-description">An apparel mockup presenting the design on a garment.</p>
+                <div class="tags"><span>Apparel Design</span><span>View design</span></div></div>
+            </a>
+            <a class="project-card infographic-card" href="./src/tshirt%20(6).jpg" target="_blank" rel="noopener" data-design-categories="apparel" aria-label="View Apparel mockup 6 design details">
+              <div class="infographic-preview"><img src="./src/tshirt%20(6).jpg" alt="Apparel mockup 6" width="1452" height="1083" loading="lazy" decoding="async" /></div>
+              <div class="project-content"><div class="project-title"><h3>Apparel Mockup 6</h3><span class="project-arrow" aria-hidden="true">↗</span></div>
+                <!-- Edit this paragraph or add more paragraphs for this design. -->
+                <p class="design-description">An apparel mockup presenting the design on a garment.</p>
+                <div class="tags"><span>Apparel Design</span><span>View design</span></div></div>
+            </a>
+            <a class="project-card infographic-card" href="./src/tshirt%20(1).png" target="_blank" rel="noopener" data-design-categories="apparel" aria-label="View Apparel design 1 design details">
+              <div class="infographic-preview"><img src="./src/tshirt%20(1).png" alt="Apparel design 1" width="1445" height="1083" loading="lazy" decoding="async" /></div>
+              <div class="project-content"><div class="project-title"><h3>Apparel Design 1</h3><span class="project-arrow" aria-hidden="true">↗</span></div>
+                <!-- Edit this paragraph or add more paragraphs for this design. -->
+                <p class="design-description">An apparel graphic created for a garment design.</p>
+                <div class="tags"><span>Apparel Design</span><span>View design</span></div></div>
+            </a>
+            <a class="project-card infographic-card" href="./src/tshirt%20(2).png" target="_blank" rel="noopener" data-design-categories="apparel" aria-label="View Apparel design 2 design details">
+              <div class="infographic-preview"><img src="./src/tshirt%20(2).png" alt="Apparel design 2" width="1445" height="1083" loading="lazy" decoding="async" /></div>
+              <div class="project-content"><div class="project-title"><h3>Apparel Design 2</h3><span class="project-arrow" aria-hidden="true">↗</span></div>
+                <!-- Edit this paragraph or add more paragraphs for this design. -->
+                <p class="design-description">An apparel graphic created for a garment design.</p>
+                <div class="tags"><span>Apparel Design</span><span>View design</span></div></div>
+            </a>
+            <a class="project-card infographic-card" href="./src/tshirt%20(3).png" target="_blank" rel="noopener" data-design-categories="apparel" aria-label="View Apparel design 3 design details">
+              <div class="infographic-preview"><img src="./src/tshirt%20(3).png" alt="Apparel design 3" width="692" height="658" loading="lazy" decoding="async" /></div>
+              <div class="project-content"><div class="project-title"><h3>Apparel Design 3</h3><span class="project-arrow" aria-hidden="true">↗</span></div>
+                <!-- Edit this paragraph or add more paragraphs for this design. -->
+                <p class="design-description">An apparel graphic created for a garment design.</p>
+                <div class="tags"><span>Apparel Design</span><span>View design</span></div></div>
+            </a>
+            <a class="project-card infographic-card" href="./src/tshirt%20(4).png" target="_blank" rel="noopener" data-design-categories="apparel" aria-label="View Apparel design 4 design details">
+              <div class="infographic-preview"><img src="./src/tshirt%20(4).png" alt="Apparel design 4" width="664" height="646" loading="lazy" decoding="async" /></div>
+              <div class="project-content"><div class="project-title"><h3>Apparel Design 4</h3><span class="project-arrow" aria-hidden="true">↗</span></div>
+                <!-- Edit this paragraph or add more paragraphs for this design. -->
+                <p class="design-description">An apparel graphic created for a garment design.</p>
+                <div class="tags"><span>Apparel Design</span><span>View design</span></div></div>
+            </a>
+            <a class="project-card infographic-card" href="./src/tshirt%20(5).png" target="_blank" rel="noopener" data-design-categories="apparel" aria-label="View Apparel design 5 design details">
+              <div class="infographic-preview"><img src="./src/tshirt%20(5).png" alt="Apparel design 5" width="642" height="637" loading="lazy" decoding="async" /></div>
+              <div class="project-content"><div class="project-title"><h3>Apparel Design 5</h3><span class="project-arrow" aria-hidden="true">↗</span></div>
+                <!-- Edit this paragraph or add more paragraphs for this design. -->
+                <p class="design-description">An apparel graphic created for a garment design.</p>
+                <div class="tags"><span>Apparel Design</span><span>View design</span></div></div>
+            </a>
+            <a class="project-card infographic-card" href="./src/tshirt%20(6).png" target="_blank" rel="noopener" data-design-categories="apparel" aria-label="View Apparel design 6 design details">
+              <div class="infographic-preview"><img src="./src/tshirt%20(6).png" alt="Apparel design 6" width="712" height="562" loading="lazy" decoding="async" /></div>
+              <div class="project-content"><div class="project-title"><h3>Apparel Design 6</h3><span class="project-arrow" aria-hidden="true">↗</span></div>
+                <!-- Edit this paragraph or add more paragraphs for this design. -->
+                <p class="design-description">An apparel graphic created for a garment design.</p>
+                <div class="tags"><span>Apparel Design</span><span>View design</span></div></div>
+            </a>
+            <a class="project-card infographic-card" href="./src/tshirt%20(7).png" target="_blank" rel="noopener" data-design-categories="apparel" aria-label="View Apparel design 7 design details">
+              <div class="infographic-preview"><img src="./src/tshirt%20(7).png" alt="Apparel design 7" width="568" height="427" loading="lazy" decoding="async" /></div>
+              <div class="project-content"><div class="project-title"><h3>Apparel Design 7</h3><span class="project-arrow" aria-hidden="true">↗</span></div>
+                <!-- Edit this paragraph or add more paragraphs for this design. -->
+                <p class="design-description">An apparel graphic created for a garment design.</p>
+                <div class="tags"><span>Apparel Design</span><span>View design</span></div></div>
+            </a>
+            <a class="project-card infographic-card" href="./src/tshirt%20(8).png" target="_blank" rel="noopener" data-design-categories="apparel" aria-label="View Apparel design 8 design details">
+              <div class="infographic-preview"><img src="./src/tshirt%20(8).png" alt="Apparel design 8" width="473" height="451" loading="lazy" decoding="async" /></div>
+              <div class="project-content"><div class="project-title"><h3>Apparel Design 8</h3><span class="project-arrow" aria-hidden="true">↗</span></div>
+                <!-- Edit this paragraph or add more paragraphs for this design. -->
+                <p class="design-description">An apparel graphic created for a garment design.</p>
+                <div class="tags"><span>Apparel Design</span><span>View design</span></div></div>
+            </a>
+            <a class="project-card infographic-card" href="./src/tshirt%20(9).png" target="_blank" rel="noopener" data-design-categories="apparel" aria-label="View Apparel design 9 design details">
+              <div class="infographic-preview"><img src="./src/tshirt%20(9).png" alt="Apparel design 9" width="483" height="387" loading="lazy" decoding="async" /></div>
+              <div class="project-content"><div class="project-title"><h3>Apparel Design 9</h3><span class="project-arrow" aria-hidden="true">↗</span></div>
+                <!-- Edit this paragraph or add more paragraphs for this design. -->
+                <p class="design-description">An apparel graphic created for a garment design.</p>
+                <div class="tags"><span>Apparel Design</span><span>View design</span></div></div>
+            </a>
+            <a class="project-card infographic-card" href="./src/tshirt%20(10).png" target="_blank" rel="noopener" data-design-categories="apparel" aria-label="View Apparel design 10 design details">
+              <div class="infographic-preview"><img src="./src/tshirt%20(10).png" alt="Apparel design 10" width="542" height="472" loading="lazy" decoding="async" /></div>
+              <div class="project-content"><div class="project-title"><h3>Apparel Design 10</h3><span class="project-arrow" aria-hidden="true">↗</span></div>
+                <!-- Edit this paragraph or add more paragraphs for this design. -->
+                <p class="design-description">An apparel graphic created for a garment design.</p>
+                <div class="tags"><span>Apparel Design</span><span>View design</span></div></div>
+            </a>
+            <a class="project-card infographic-card" href="./src/tshirt%20(11).png" target="_blank" rel="noopener" data-design-categories="apparel" aria-label="View Apparel design 11 design details">
+              <div class="infographic-preview"><img src="./src/tshirt%20(11).png" alt="Apparel design 11" width="468" height="454" loading="lazy" decoding="async" /></div>
+              <div class="project-content"><div class="project-title"><h3>Apparel Design 11</h3><span class="project-arrow" aria-hidden="true">↗</span></div>
+                <!-- Edit this paragraph or add more paragraphs for this design. -->
+                <p class="design-description">An apparel graphic created for a garment design.</p>
+                <div class="tags"><span>Apparel Design</span><span>View design</span></div></div>
+            </a>
+            <a class="project-card infographic-card" href="./src/tshirt%20(12).png" target="_blank" rel="noopener" data-design-categories="apparel" aria-label="View Apparel design 12 design details">
+              <div class="infographic-preview"><img src="./src/tshirt%20(12).png" alt="Apparel design 12" width="566" height="661" loading="lazy" decoding="async" /></div>
+              <div class="project-content"><div class="project-title"><h3>Apparel Design 12</h3><span class="project-arrow" aria-hidden="true">↗</span></div>
+                <!-- Edit this paragraph or add more paragraphs for this design. -->
+                <p class="design-description">An apparel graphic created for a garment design.</p>
+                <div class="tags"><span>Apparel Design</span><span>View design</span></div></div>
             </a>
             <button class="project-card" type="button" data-project="folio">
               <div class="project-art art-folio" aria-hidden="true"><div class="mini-browser"><div class="browser-bar"><i></i><i></i><i></i></div><div class="mini-content"><span class="mini-kicker">DESIGNER & DEVELOPER</span><strong>Less, but<br>better<span>.</span></strong><div class="mini-line"></div><div class="mini-line short"></div><div class="mini-pill">Explore my work ↗</div></div><span class="mini-star">✳</span></div><span class="art-index">001 / WEB</span></div>
-              <div class="project-content"><div class="project-title"><h3>Personal portfolio</h3><span class="project-arrow" aria-hidden="true">↗</span></div><p>A quiet space on the web to share your work and tell your story.</p><div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div></div>
+              <div class="project-content"><div class="project-title"><h3>Personal portfolio</h3><span class="project-arrow" aria-hidden="true">↗</span></div><p class="design-description">A quiet space on the web to share your work and tell your story.</p><div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div></div>
             </button>
             <button class="project-card" type="button" data-project="notes">
               <div class="project-art art-notes" aria-hidden="true"><div class="note-sheet"><span class="note-date">A PLACE FOR YOUR THOUGHTS</span><strong>Small notes.<br>Big ideas.</strong><div class="note-rule"></div><div class="note-line"><span>✓</span> Make something meaningful</div><div class="note-line"><span>✓</span> Stay a little curious</div><div class="note-line muted"><span>○</span> See where it takes you</div></div><span class="art-index">002 / CONCEPT</span></div>
-              <div class="project-content"><div class="project-title"><h3>Everyday notes</h3><span class="project-arrow" aria-hidden="true">↗</span></div><p>A simple concept for collecting thoughts and making room for ideas.</p><div class="tags"><span>Product concept</span><span>UI design</span></div></div>
+              <div class="project-content"><div class="project-title"><h3>Everyday notes</h3><span class="project-arrow" aria-hidden="true">↗</span></div><p class="design-description">A simple concept for collecting thoughts and making room for ideas.</p><div class="tags"><span>Product concept</span><span>UI design</span></div></div>
             </button>
           </div>
           </div>
         </section>
 
+        <section class="section projects" id="projects" aria-labelledby="projects-heading">
+          <div class="section-heading"><h2 id="projects-heading"><span class="section-number">03</span> Projects</h2><span class="section-aside">A closer look at the work</span></div>
+          <article class="featured-project" aria-labelledby="tough-athletics-heading">
+            <div class="featured-project-overview">
+              <div class="featured-project-heading">
+                <div>
+                  <p class="eyebrow">2026 / GYM MANAGEMENT SYSTEM</p>
+                  <h3 id="tough-athletics-heading">Tough Athletics</h3>
+                  <p class="featured-project-description">A gym management system for Tough Athletics in Malaybalay City, bringing membership, attendance, and administration into one experience. These screens showcase the member login, plan selection, and profile flows.</p>
+                </div>
+                <p class="project-contribution"><span>My contribution</span>System Figma Designer &amp; System Documenter</p>
+                <div class="tags"><span>Web UI</span><span>Gym membership</span><span>System design</span></div>
+              </div>
+              <div class="featured-project-showcase">
+                <div class="project-gallery" id="tough-athletics-gallery" aria-label="Tough Athletics project images">
+                  <figure class="project-screen">
+                    <a href="./src/ToughGym(1).png" target="_blank" rel="noopener" aria-label="View Tough Athletics welcome screen in full size"><img src="./src/ToughGym(1).png" alt="Tough Athletics welcome screen with the white athlete logo on a dark gradient" width="398" height="777" loading="lazy" decoding="async" /></a>
+                    <figcaption>01 / Welcome</figcaption>
+                  </figure>
+                  <figure class="project-screen">
+                    <a href="./src/ToughGym(5).png" target="_blank" rel="noopener" aria-label="View Tough Athletics login screen in full size"><img src="./src/ToughGym(5).png" alt="Tough Athletics login screen with username and password fields, password recovery, and sign-up link" width="396" height="777" loading="lazy" decoding="async" /></a>
+                    <figcaption>02 / Login</figcaption>
+                  </figure>
+                  <figure class="project-screen">
+                    <a href="./src/ToughGym(4).png" target="_blank" rel="noopener" aria-label="View Tough Athletics membership screen in full size"><img src="./src/ToughGym(4).png" alt="Membership selection screen showing Basic, Premium, and VIP gym plans" width="386" height="776" loading="lazy" decoding="async" /></a>
+                    <figcaption>03 / Membership selection</figcaption>
+                  </figure>
+                  <figure class="project-screen project-screen-flow">
+                    <a href="./src/ToughGym(3).png" target="_blank" rel="noopener" aria-label="View Tough Athletics membership plan comparison in full size"><img src="./src/ToughGym(3).png" alt="Four membership screens showing collapsed plan cards and expanded Basic, Premium, and VIP benefits" width="1232" height="647" loading="lazy" decoding="async" /></a>
+                    <figcaption>04 / Plan details and benefits</figcaption>
+                  </figure>
+                  <figure class="project-screen project-screen-flow">
+                    <a href="./src/ToughGym(2).png" target="_blank" rel="noopener" aria-label="View Tough Athletics profile editing flow in full size"><img src="./src/ToughGym(2).png" alt="Three profile screens showing editable account information, a save confirmation dialog, and a saved successfully message" width="967" height="687" loading="lazy" decoding="async" /></a>
+                    <figcaption>05 / Profile editing and save confirmation</figcaption>
+                  </figure>
+                </div>
+                <div class="project-gallery-controls" hidden>
+                  <button class="gallery-back" type="button" aria-label="Previous project image" aria-controls="tough-athletics-gallery"><span aria-hidden="true">←</span></button>
+                  <p class="project-gallery-status" role="status" aria-live="polite" aria-atomic="true"></p>
+                  <button class="gallery-next" type="button" aria-label="Next project image" aria-controls="tough-athletics-gallery"><span aria-hidden="true">→</span></button>
+                </div>
+                <p class="project-gallery-note">Select a screen to view it in full size.</p>
+              </div>
+            </div>
+            <details class="project-details">
+              <summary>View project details</summary>
+              <div class="project-details-content">
+                <h4>Tough Athletics Gym Membership and Customer Monitoring (2026)</h4>
+                <dl class="project-details-meta">
+                  <div><dt>Members</dt><dd><ul><li>Aliah Liman-ay</li><li>Zach Gelacio</li><li>Ranulf Bahian</li><li>James Cortejo</li></ul></dd></div>
+                  <div><dt>My contribution</dt><dd>System Figma Designer &amp; System Documenter</dd></div>
+                  <div><dt>Figma prototype</dt><dd><a class="project-figma-link" href="https://www.figma.com/design/80JhacER0X9joeHGCCBsmW/TOUGH-Gym?node-id=0-1&amp;t=4ym238wVA5Ef3I3r-1" target="_blank" rel="noopener">View Tough Athletics in Figma <span aria-hidden="true">↗</span></a></dd></div>
+                </dl>
+                <h5>Description</h5>
+                <p>A web-based gym management system developed to streamline membership, attendance, and administrative operations for Tough Athletics Gym in Malaybalay City.</p>
+                <p>The system was designed to address the challenges of manually managing memberships, payments, approvals, and attendance. It provides members with a convenient way to register, securely log in, and check in to the gym using QR codes, while giving administrators a centralized dashboard for managing memberships, monitoring attendance, sending notifications, and generating reports.</p>
+                <p>The project also incorporates secure authentication, role-based access control, JWT authentication, and OAuth login to protect user information and ensure that members and administrators have appropriate access to system features.</p>
+                <p>Overall, the system helps reduce manual administrative work, improve attendance and membership tracking, strengthen security, and provide a more convenient experience for both gym members and staff. The project also provided our team with hands-on experience in full-stack development, API integration, authentication, QR code systems, and modular web application design.</p>
+              </div>
+            </details>
+          </article>
+          <article class="featured-project" aria-labelledby="vegiecraft-heading">
+            <div class="featured-project-overview">
+              <div class="featured-project-heading">
+                <div>
+                  <p class="eyebrow">2024 / MARKETPLACE PROTOTYPE</p>
+                  <h3 id="vegiecraft-heading">VegieCraft</h3>
+                  <p class="featured-project-description">A marketplace app interface for vegetables and handcrafted products. The design connects buyers and sellers through account selection, product browsing, shop profiles, messaging, and a shopping cart, using a green and cream palette inspired by fresh produce and natural materials.</p>
+                </div>
+                <p class="project-contribution"><span>My contribution</span>Figma Prototype Designer &amp; Prototype Documenter</p>
+                <div class="tags"><span>Mobile UI</span><span>Marketplace</span><span>App design</span></div>
+              </div>
+              <div class="featured-project-showcase">
+                <div class="project-gallery" id="vegiecraft-gallery" aria-label="VegieCraft project images">
+                  <figure class="project-screen project-screen-flow">
+                    <a href="./src/VegieCraft%20(1).png" target="_blank" rel="noopener" aria-label="View VegieCraft welcome and sign-in in full size"><img src="./src/VegieCraft%20(1).png" alt="Welcome, seller or buyer selection, and seller sign-in screens" width="1092" height="633" loading="lazy" decoding="async" /></a>
+                    <figcaption>01 / Welcome and sign-in</figcaption>
+                  </figure>
+                  <figure class="project-screen project-screen-flow">
+                    <a href="./src/VegieCraft%20(2).png" target="_blank" rel="noopener" aria-label="View VegieCraft home and categories in full size"><img src="./src/VegieCraft%20(2).png" alt="Home screen, add-to-cart confirmation, and vegetable and craft categories" width="1103" height="657" loading="lazy" decoding="async" /></a>
+                    <figcaption>02 / Home and categories</figcaption>
+                  </figure>
+                  <figure class="project-screen project-screen-flow">
+                    <a href="./src/VegieCraft%20(4).png" target="_blank" rel="noopener" aria-label="View VegieCraft products and cart confirmation in full size"><img src="./src/VegieCraft%20(4).png" alt="Vegetable and handicraft product listings with add-to-cart confirmations" width="1065" height="481" loading="lazy" decoding="async" /></a>
+                    <figcaption>03 / Products and cart confirmation</figcaption>
+                  </figure>
+                  <figure class="project-screen project-screen-flow">
+                    <a href="./src/VegieCraft%20(3).png" target="_blank" rel="noopener" aria-label="View VegieCraft account management in full size"><img src="./src/VegieCraft%20(3).png" alt="Account selection, profile management, and account removal screens" width="1051" height="602" loading="lazy" decoding="async" /></a>
+                    <figcaption>04 / Account management</figcaption>
+                  </figure>
+                  <figure class="project-screen project-screen-flow">
+                    <a href="./src/VegieCraft%20(5).png" target="_blank" rel="noopener" aria-label="View VegieCraft chat, shop profile, and cart in full size"><img src="./src/VegieCraft%20(5).png" alt="Buyer and seller conversation, shop profile, and shopping cart with checkout" width="1178" height="705" loading="lazy" decoding="async" /></a>
+                    <figcaption>05 / Chat, shop profile, and cart</figcaption>
+                  </figure>
+                </div>
+                <div class="project-gallery-controls" hidden>
+                  <button class="gallery-back" type="button" aria-label="Previous VegieCraft image" aria-controls="vegiecraft-gallery"><span aria-hidden="true">←</span></button>
+                  <p class="project-gallery-status" role="status" aria-live="polite" aria-atomic="true"></p>
+                  <button class="gallery-next" type="button" aria-label="Next VegieCraft image" aria-controls="vegiecraft-gallery"><span aria-hidden="true">→</span></button>
+                </div>
+                <p class="project-gallery-note">Select a screen to view it in full size.</p>
+              </div>
+            </div>
+            <details class="project-details">
+              <summary>View project details</summary>
+              <div class="project-details-content">
+                <h4>VegieCraft (2024)</h4>
+                <dl class="project-details-meta">
+                  <div><dt>Members</dt><dd><ul><li>Aliah Liman-ay</li><li>Rusty Carson</li><li>Jefferson Tictic</li></ul></dd></div>
+                  <div><dt>My contribution</dt><dd>Figma Prototype Designer &amp; Prototype Documenter</dd></div>
+                  <div><dt>Figma prototype</dt><dd><a class="project-figma-link" href="https://www.figma.com/design/SoGyfsT1EIURKKdu3XWj4v/Untitled?node-id=3-119&amp;t=MB3E517Oe1qN4zee-1" target="_blank" rel="noopener">View VegieCraft in Figma <span aria-hidden="true">↗</span></a></dd></div>
+                </dl>
+                <h5>Description</h5>
+                <p>VegieCraft is a community-focused online marketplace designed to connect local farmers, artisans, and consumers in Malaybalay City and nearby rural communities. The platform provides a convenient way for people to discover and purchase locally sourced products such as fresh vegetables, organic produce, handmade crafts, and indigenous artworks.</p>
+                <p>The project was created to help local sellers reach more customers and increase their income by giving them a digital space to showcase and sell their products. At the same time, consumers can easily access a variety of locally made and locally grown products without having to rely solely on traditional marketplaces.</p>
+                <p>As a prototype, VegieCraft focuses on visualizing how the platform would work and how users would interact with it. The prototyping process helped identify potential design issues, improve functionality, and create a more user-friendly shopping experience before full development.</p>
+                <p>Overall, VegieCraft aims to support local businesses, promote locally sourced products, and strengthen the local economy through e-commerce.</p>
+              </div>
+            </details>
+          </article>
+          <article class="featured-project" aria-labelledby="yoona-heading">
+            <div class="featured-project-overview">
+              <div class="featured-project-heading">
+                <div>
+                  <p class="eyebrow">2025 / WEB &amp; DASHBOARD DESIGN</p>
+                  <h3 id="yoona-heading">Yoona Computer Trading</h3>
+                  <p class="featured-project-description">A storefront and administration interface for a computer trading business. The storefront highlights wireless CCTV products, while the dashboard brings together inventory, orders, customer totals, and monthly sales. A dedicated reports screen presents sales trends, product statistics, and customer growth in a blue and yellow visual style.</p>
+                </div>
+                <p class="project-contribution"><span>My contribution</span>System Figma Designer &amp; System Documenter</p>
+                <div class="tags"><span>Web UI</span><span>Admin dashboard</span><span>Data visualization</span></div>
+              </div>
+              <div class="featured-project-showcase">
+                <div class="project-gallery" id="yoona-gallery" aria-label="Yoona Computer Trading project images">
+                  <figure class="project-screen project-screen-flow">
+                    <a href="./src/Yoona%20(1).png" target="_blank" rel="noopener" aria-label="View Yoona Computer Trading storefront in full size"><img src="./src/Yoona%20(1).png" alt="Yoona storefront featuring wireless CCTV with navigation and a login button" width="1168" height="752" loading="lazy" decoding="async" /></a>
+                    <figcaption>01 / Storefront</figcaption>
+                  </figure>
+                  <figure class="project-screen project-screen-flow">
+                    <a href="./src/Yoona%20(3).png" target="_blank" rel="noopener" aria-label="View Yoona Computer Trading admin dashboard in full size"><img src="./src/Yoona%20(3).png" alt="Yoona administration dashboard showing products, orders, stock, customers, and monthly sales" width="1157" height="755" loading="lazy" decoding="async" /></a>
+                    <figcaption>02 / Admin dashboard</figcaption>
+                  </figure>
+                  <figure class="project-screen project-screen-flow">
+                    <a href="./src/Yoona%20(2).png" target="_blank" rel="noopener" aria-label="View Yoona Computer Trading reports and analytics in full size"><img src="./src/Yoona%20(2).png" alt="Yoona reports showing sales totals, customer habits, product statistics, and customer growth" width="1167" height="757" loading="lazy" decoding="async" /></a>
+                    <figcaption>03 / Reports and analytics</figcaption>
+                  </figure>
+                </div>
+                <div class="project-gallery-controls" hidden>
+                  <button class="gallery-back" type="button" aria-label="Previous Yoona Computer Trading image" aria-controls="yoona-gallery"><span aria-hidden="true">←</span></button>
+                  <p class="project-gallery-status" role="status" aria-live="polite" aria-atomic="true"></p>
+                  <button class="gallery-next" type="button" aria-label="Next Yoona Computer Trading image" aria-controls="yoona-gallery"><span aria-hidden="true">→</span></button>
+                </div>
+                <p class="project-gallery-note">Select a screen to view it in full size.</p>
+              </div>
+            </div>
+            <details class="project-details">
+              <summary>View project details</summary>
+              <div class="project-details-content">
+                <h4>Yoona Computer Trading: Product Display Website with Inventory Management &amp; Service Availability (2025)</h4>
+                <dl class="project-details-meta">
+                  <div><dt>Members</dt><dd><ul><li>Aliah Liman-ay</li><li>Zach Gelacio</li><li>Rayden Delfin</li></ul></dd></div>
+                  <div><dt>My contribution</dt><dd>System Figma Designer &amp; System Documenter</dd></div>
+                  <div><dt>Figma prototype</dt><dd><a class="project-figma-link" href="https://www.figma.com/design/kivtBRWBuJFr4v0sedyrq4/Untitled?node-id=0-1&amp;t=H5EYoEgx66SKDD3m-1" target="_blank" rel="noopener">View Yoona in Figma <span aria-hidden="true">↗</span></a></dd></div>
+                </dl>
+                <h5>Description</h5>
+                <p>A product display and inventory management website designed for a local computer and IT services business. The system was created to improve how the business manages its products, inventory, and computer repair services while making information more accessible to customers.</p>
+                <p>The website allows customers to browse products, view prices and stock availability, and search or filter items by category before visiting the store. It also includes a service availability calendar, allowing customers to check when computer repair services are available and plan their visits accordingly.</p>
+                <p>For the business owner, the system provides a digital inventory management dashboard where products can be added, edited, removed, and updated as stock changes. This helps replace manual inventory tracking with a more organized and accessible digital system.</p>
+                <p>Overall, the project aims to streamline business operations, improve inventory accuracy, reduce unnecessary customer visits, and provide a more convenient shopping and service experience through a user-friendly web platform.</p>
+              </div>
+            </details>
+          </article>
+          <article class="featured-project" aria-labelledby="alagad-heading">
+            <div class="featured-project-overview">
+              <div class="featured-project-heading">
+                <div>
+                  <p class="eyebrow">CAMPUS NAVIGATION &amp; ASSISTANT</p>
+                  <h3 id="alagad-heading">ALAGAD</h3>
+                  <p class="featured-project-description">A campus navigation and information assistance system for Bukidnon State University, available through kiosk and mobile interfaces. Interactive maps, route guidance, and an AI-powered assistant help users find destinations and understand university services.</p>
+                </div>
+                <p class="project-contribution"><span>My contribution</span>Prototyping, UI/UX Design, and Documentation</p>
+                <div class="tags"><span>UI/UX Design</span><span>Prototyping</span><span>Campus navigation</span></div>
+              </div>
+              <div class="featured-project-showcase">
+                <div class="project-gallery" id="alagad-gallery" aria-label="ALAGAD project images">
+                  <figure class="project-screen project-screen-flow">
+                    <a href="./src/alagad-homepage.png" target="_blank" rel="noopener" aria-label="View ALAGAD homepage in full size"><img src="./src/alagad-homepage.png" alt="ALAGAD homepage with a Public Map View entry point and features for an interactive map, smart directions, and an AI assistant" width="1914" height="949" loading="lazy" decoding="async" /></a>
+                    <figcaption>01 / Homepage and key features</figcaption>
+                  </figure>
+                  <figure class="project-screen project-screen-flow">
+                    <a href="./src/alagad-campus-map.png" target="_blank" rel="noopener" aria-label="View ALAGAD campus map in full size"><img src="./src/alagad-campus-map.png" alt="ALAGAD interactive campus map with labeled building markers, destination search, quick categories, and an assistant" width="1918" height="955" loading="lazy" decoding="async" /></a>
+                    <figcaption>02 / Interactive campus navigation</figcaption>
+                  </figure>
+                </div>
+                <div class="project-gallery-controls" hidden>
+                  <button class="gallery-back" type="button" aria-label="Previous ALAGAD image" aria-controls="alagad-gallery"><span aria-hidden="true">←</span></button>
+                  <p class="project-gallery-status" role="status" aria-live="polite" aria-atomic="true"></p>
+                  <button class="gallery-next" type="button" aria-label="Next ALAGAD image" aria-controls="alagad-gallery"><span aria-hidden="true">→</span></button>
+                </div>
+                <p class="project-gallery-note">Select a screen to view it in full size.</p>
+              </div>
+            </div>
+            <details class="project-details">
+              <summary>View project details</summary>
+              <div class="project-details-content">
+                <h4>ALAGAD: BukSU Campus Navigation and Assistant</h4>
+                <dl class="project-details-meta">
+                  <div><dt>My contribution</dt><dd>Prototyping, UI/UX Design, and Documentation</dd></div>
+                </dl>
+                <h5>Description</h5>
+                <p>ALAGAD is a campus navigation and information assistance system designed for Bukidnon State University (BukSU). Available through kiosk and mobile interfaces, it helps students, faculty, staff, and visitors locate campus buildings, offices, rooms, and facilities using an interactive digital map and route guidance.</p>
+                <p>Its AI-powered campus assistant supports questions in English, Tagalog, and Cebuano about service requirements, procedures, office locations, personnel assignments, and frequently asked questions. By combining navigation and access to campus information, ALAGAD aims to make finding destinations and understanding university services easier and more convenient.</p>
+              </div>
+            </details>
+          </article>
+          <article class="featured-project" aria-labelledby="zarvival-heading">
+            <div class="featured-project-overview">
+              <div class="featured-project-heading">
+                <div>
+                  <p class="eyebrow">PIXEL ART PLATFORM GAME</p>
+                  <h3 id="zarvival-heading">ZARVIVAL: Island Quest</h3>
+                  <p class="featured-project-description">A 2D Java platformer with playable characters, enemies, levels, audio, and a complete menu and pause flow.</p>
+                </div>
+                <p class="project-contribution"><span>My contribution</span>Design and Documentation</p>
+                <div class="tags"><span>Game Design</span><span>Documentation</span><span>Pixel Art</span></div>
+              </div>
+              <div class="featured-project-showcase">
+                <div class="project-gallery" id="zarvival-gallery" aria-label="ZARVIVAL: Island Quest project images">
+                  <figure class="project-screen project-screen-flow">
+                    <a href="./src/zarvival-character-selection.png" target="_blank" rel="noopener" aria-label="View ZARVIVAL character selection in full size"><img src="./src/zarvival-character-selection.png" alt="ZARVIVAL character selection with three pixel art characters, a wooden menu panel, and a Play button against a waterfall and forest backdrop" width="1251" height="704" loading="lazy" decoding="async" /></a>
+                    <figcaption>01 / Character selection</figcaption>
+                  </figure>
+                  <figure class="project-screen project-screen-flow">
+                    <a href="./src/zarvival-main-menu.png" target="_blank" rel="noopener" aria-label="View ZARVIVAL main menu in full size"><img src="./src/zarvival-main-menu.png" alt="ZARVIVAL main menu with Play, Options, Tutorial, and Quit buttons on a wooden panel surrounded by vines and forest scenery" width="1251" height="705" loading="lazy" decoding="async" /></a>
+                    <figcaption>02 / Main menu</figcaption>
+                  </figure>
+                  <figure class="project-screen project-screen-flow">
+                    <a href="./src/zarvival-gameplay.png" target="_blank" rel="noopener" aria-label="View ZARVIVAL gameplay in full size"><img src="./src/zarvival-gameplay.png" alt="ZARVIVAL platform gameplay with a player character, mushroom enemy, floating platforms, spikes, health indicators, and mountains in the background" width="1251" height="706" loading="lazy" decoding="async" /></a>
+                    <figcaption>03 / Platform gameplay</figcaption>
+                  </figure>
+                </div>
+                <div class="project-gallery-controls" hidden>
+                  <button class="gallery-back" type="button" aria-label="Previous ZARVIVAL image" aria-controls="zarvival-gallery"><span aria-hidden="true">&#8592;</span></button>
+                  <p class="project-gallery-status" role="status" aria-live="polite" aria-atomic="true"></p>
+                  <button class="gallery-next" type="button" aria-label="Next ZARVIVAL image" aria-controls="zarvival-gallery"><span aria-hidden="true">&#8594;</span></button>
+                </div>
+                <p class="project-gallery-note">Select a screen to view it in full size.</p>
+              </div>
+            </div>
+            <details class="project-details">
+              <summary>View project details</summary>
+              <div class="project-details-content">
+                <h4>ZARVIVAL: Island Quest</h4>
+                <dl class="project-details-meta">
+                  <div><dt>My contribution</dt><dd>Design and Documentation</dd></div>
+                </dl>
+                <h5>Description</h5>
+                <p>A 2D Java platformer with playable characters, enemies, levels, audio, and a complete menu and pause flow.</p>
+                <p>My contribution to the project was design and documentation.</p>
+              </div>
+            </details>
+          </article>
+        </section>
+
         <section class="section skills" id="skills" aria-labelledby="skills-heading">
-          <div class="section-heading"><h2 id="skills-heading"><span class="section-number">02</span> Skills</h2><span class="section-aside">Design with purpose</span></div>
+          <div class="section-heading"><h2 id="skills-heading"><span class="section-number">04</span> Skills</h2><span class="section-aside">Design with purpose</span></div>
           <div class="skills-grid">
             <div class="skill-group">
-              <h3>Visual design</h3>
-              <p>Bringing ideas to life through clear, considered visuals.</p>
-              <ul class="skill-list" aria-label="Visual design skills"><li>Layout & composition</li><li>Typography</li><li>Color & contrast</li><li>Visual hierarchy</li></ul>
+              <p class="eyebrow">Creative practice</p>
+              <h3>Design &amp; tools</h3>
+              <ul class="skill-list" aria-label="Design skills and tools">
+                <li>UI/UX Design</li>
+                <li>Figma Prototyping</li>
+                <li>Graphic Design</li>
+                <li>Canva</li>
+                <li>Adobe Illustrator</li>
+                <li>Kittl</li>
+                <li>APOD</li>
+                <li>PRINTIFY</li>
+                <li>AI-Assisted Design</li>
+              </ul>
             </div>
             <div class="skill-group">
-              <h3>Web design</h3>
-              <p>Shaping digital experiences that feel simple and intuitive.</p>
-              <ul class="skill-list" aria-label="Web design skills"><li>Interface design</li><li>Responsive layouts</li><li>Wireframing</li><li>Interaction design</li></ul>
+              <p class="eyebrow">Ideas into action</p>
+              <h3>Projects &amp; development</h3>
+              <ul class="skill-list" aria-label="Project and development skills">
+                <li>Research and Documentation</li>
+                <li>Presentation</li>
+                <li>Teamwork and Collaboration</li>
+                <li>Project Planning</li>
+                <li>Web/App Project Knowledge</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Laravel</li>
+                <li>Basic Data Analysis using Excel and Weka</li>
+                <li>Quality Assurance Testing using Spreadsheets</li>
+              </ul>
             </div>
+          </div>
+        </section>
+
+        <section class="section certificates" id="certificates" aria-labelledby="certificates-heading">
+          <div class="section-heading"><h2 id="certificates-heading"><span class="section-number">05</span> Certificates</h2><span class="section-aside">Learning in progress</span></div>
+          <div class="certificate-grid" id="certificate-results">
+            <article class="certificate-card certificate-card-earned">
+              <a class="certificate-preview" href="./src/ai-literacy-responsible-use.png" target="_blank" rel="noopener" aria-label="View Introduction to AI Literacy and Responsible Use certificate in full size">
+                <img src="./src/ai-literacy-responsible-use.png" alt="Certificate of completion awarded to Aliah Rez Liman-ay for Introduction to AI Literacy and Responsible Use, issued on 14 September 2026" width="1123" height="795" loading="lazy" decoding="async" />
+              </a>
+              <div>
+                <p class="certificate-kicker">Certificate of completion</p>
+                <h3>Introduction to AI Literacy and Responsible Use</h3>
+                <p>Completed the micro-credentials course through Mapúa University and CHED ACHIEVE.</p>
+                <p class="certificate-date">Issued <time datetime="2026-09-14">14 September 2026</time></p>
+                <p class="certificate-id">Credential ID: KM3B3DG68EYWV</p>
+                <div class="tags"><span>Mapúa University</span><span>2026</span></div>
+                <a class="certificate-link" href="./src/ai-literacy-responsible-use.pdf" target="_blank" rel="noopener">View certificate (PDF) <span aria-hidden="true">↗</span></a>
+              </div>
+            </article>
+            <article class="certificate-card certificate-card-earned">
+              <a class="certificate-preview" href="./src/topcit-level-3.png" target="_blank" rel="noopener" aria-label="View TOPCIT Level 3 certificate in full size">
+                <img src="./src/topcit-level-3.png" alt="TOPCIT certificate awarded to Aliah Rez Limanay, Level 3 with a score of 555 out of 1000, tested on 23 July 2026" width="797" height="859" loading="lazy" decoding="async" />
+              </a>
+              <div>
+                <p class="certificate-kicker">Certificate of achievement</p>
+                <h3>TOPCIT — Level 3</h3>
+                <p>Achieved a score of 555 out of 1,000 in the Test of Practical Competency in ICT, administered by the Institute for Information &amp; Communications Technology Promotion (IITP).</p>
+                <p class="certificate-date">Test date <time datetime="2026-07-23">23 July 2026</time></p>
+                <p class="certificate-id">Certificate No.: TL2603003074</p>
+                <div class="tags"><span>IITP</span><span>Level 3</span><span>2026</span></div>
+                <a class="certificate-link" href="./src/topcit-level-3.pdf" target="_blank" rel="noopener">View certificate (PDF) <span aria-hidden="true">↗</span></a>
+              </div>
+            </article>
+            <article class="certificate-card certificate-card-earned">
+              <a class="certificate-preview" href="./src/ccna-switching-routing-wireless.png" target="_blank" rel="noopener" aria-label="View Cisco CCNA Switching, Routing, and Wireless Essentials completion certificate in full size">
+                <img src="./src/ccna-switching-routing-wireless.png" alt="Cisco certificate of course completion awarded to Aliah Rez Liman-ay for CCNA: Switching, Routing, and Wireless Essentials on 23 December 2025" width="1058" height="819" loading="lazy" decoding="async" />
+              </a>
+              <div>
+                <p class="certificate-kicker">Certificate of course completion</p>
+                <h3>CCNA: Switching, Routing, and Wireless Essentials</h3>
+                <p>Completed the Cisco Networking Academy course, covering switching operations, routing, and wired and wireless LAN configuration with security best practices.</p>
+                <p class="certificate-date">Issued <time datetime="2025-12-23">23 December 2025</time></p>
+                <div class="tags"><span>Cisco</span><span>Networking</span><span>2025</span></div>
+                <a class="certificate-link" href="./src/ccna-switching-routing-wireless.pdf" target="_blank" rel="noopener">View certificate (PDF) <span aria-hidden="true">↗</span></a>
+              </div>
+            </article>
+            <article class="certificate-card certificate-card-earned">
+              <a class="certificate-preview" href="./src/ai-technologies-participation.jpg" target="_blank" rel="noopener" aria-label="View AI in Technologies participation certificate in full size">
+                <img src="./src/ai-technologies-participation.jpg" alt="Certificate of participation awarded to Aliah Rez Liman-Ay by Bukidnon State University for the Virtual International Lecture Series 2025, issued on 28 March 2025" width="1169" height="924" loading="lazy" decoding="async" />
+              </a>
+              <div>
+                <p class="certificate-kicker">Certificate of participation</p>
+                <h3>AI in Technologies: Innovations and Applications Across Industries</h3>
+                <p>Participated in Bukidnon State University’s Virtual International Lecture Series 2025, held via Zoom from 25–28 March 2025.</p>
+                <p class="certificate-date">Issued <time datetime="2025-03-28">28 March 2025</time></p>
+                <div class="tags"><span>Bukidnon State University</span><span>2025</span></div>
+                <a class="certificate-link" href="./src/ai-technologies-participation.jpg" target="_blank" rel="noopener">View certificate <span aria-hidden="true">↗</span></a>
+              </div>
+            </article>
           </div>
         </section>
 
         <section class="section toolkit" aria-labelledby="toolkit-heading">
-          <div class="section-heading"><h2 id="toolkit-heading"><span class="section-number">03</span> The approach</h2><span class="section-aside">Keep it intentional</span></div>
+          <div class="section-heading"><h2 id="toolkit-heading"><span class="section-number">06</span> The Approach</h2><span class="section-aside">Keep it intentional</span></div>
           <div class="approach-row"><span class="approach-symbol" aria-hidden="true">⌘</span><div><h3>Start with curiosity</h3><p>Ask questions, explore possibilities, and learn by making.</p></div></div>
           <div class="approach-row"><span class="approach-symbol" aria-hidden="true">◈</span><div><h3>Care about the details</h3><p>Clear interfaces. Considered interactions. The little things matter.</p></div></div>
           <div class="approach-row"><span class="approach-symbol" aria-hidden="true">↗</span><div><h3>Make it a little better</h3><p>Start small, listen to feedback, and keep moving forward.</p></div></div>
         </section>
 
         <section class="section contact" id="contact" aria-labelledby="contact-heading">
-          <div class="section-heading"><h2 id="contact-heading"><span class="section-number">04</span> Contact</h2></div>
+          <div class="section-heading"><h2 id="contact-heading"><span class="section-number">07</span> Contact</h2><span class="section-aside">Let’s connect</span></div>
           <div class="contact-panel"><span class="eyebrow">LET’S CONNECT</span><h3>Have a project in mind<span class="accent">?</span></h3><p>Get in touch to discuss your ideas or learn more about my work.</p><a class="email-link" href="mailto:aliahlimanay03@gmail.com">aliahlimanay03@gmail.com <span aria-hidden="true">↗</span></a></div>
         </section>
       </main>
 
       <footer><p>© <span id="year">2026</span> Aliah Rez G. Limanay</p><span>Made with intention<span class="footer-star" aria-hidden="true"> ✳</span></span><a href="#" aria-label="Back to top">Back to top ↑</a></footer>
     </div>
-    <dialog id="project-dialog" aria-labelledby="dialog-title"><div class="dialog-inner"><button class="dialog-close" type="button" aria-label="Close design details">×</button><span class="eyebrow">DESIGN NOTES</span><h2 id="dialog-title"></h2><p id="dialog-description"></p><div class="tags" id="dialog-tags"></div><p class="dialog-note" id="dialog-note"></p><button class="primary-link dialog-done" type="button">Back to portfolio <span aria-hidden="true">↗</span></button></div></dialog>
+    <dialog id="project-dialog" aria-labelledby="dialog-title"><div class="dialog-inner"><button class="dialog-close" type="button" aria-label="Close design details">×</button><span class="eyebrow">DESIGN NOTES</span><h2 id="dialog-title"></h2><div id="dialog-media" class="dialog-media" hidden></div><div id="dialog-description"></div><div class="tags" id="dialog-tags"></div><p class="dialog-note" id="dialog-note"></p><button class="primary-link dialog-done" type="button">Back to portfolio <span aria-hidden="true">↗</span></button></div></dialog>
+    <dialog id="project-image-viewer" aria-labelledby="image-viewer-title">
+      <div class="image-viewer-header">
+        <h2 id="image-viewer-title"></h2>
+        <button class="image-viewer-close" type="button" aria-label="Close image viewer">×</button>
+      </div>
+      <figure class="image-viewer-figure">
+        <div class="image-viewer-stage"><img id="image-viewer-image" alt="" /></div>
+        <figcaption id="image-viewer-caption"></figcaption>
+      </figure>
+      <div class="project-gallery-controls image-viewer-controls">
+        <button class="image-viewer-back" type="button" aria-label="Previous project image"><span aria-hidden="true">←</span></button>
+        <p id="image-viewer-status" class="project-gallery-status" role="status" aria-live="polite" aria-atomic="true"></p>
+        <button class="image-viewer-next" type="button" aria-label="Next project image"><span aria-hidden="true">→</span></button>
+      </div>
+    </dialog>
   </body>
 </html>
